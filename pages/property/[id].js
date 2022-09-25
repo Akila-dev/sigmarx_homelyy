@@ -73,14 +73,14 @@ const PropertyDetails = ({
             </div>
           )}
         </div>
-        <div>
+        <div className="w-full">
           {amenities.length && <p className="text-2xl font-bold">Amenities</p>}
-          <div className="flex flex-wrap py-3">
+          <div className="py-3">
             {amenities.map((item) =>
               item.amenities.map((amenity) => (
                 <p
                   key={amenity.text}
-                  className="font-semibold text-g p-2 mr-2 my-1 bg-white text-gray-500 rounded-lg"
+                  className="font-semibold inline-block text-g p-2 mr-2 my-1 bg-white text-gray-500 rounded-lg"
                 >
                   {amenity.text}
                 </p>
